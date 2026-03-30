@@ -772,6 +772,32 @@ tr:hover td{
   .auth-card,
   .modal-box{padding:20px}
 }
+/* --- TEMPORARY FIGMA EXPORT OVERRIDE --- */
+/* 1. Unhide main screens */
+#landing, #login, #app {
+  display: flex !important;
+  margin-bottom: 150px !important;
+}
+#landing { display: block !important; }
+#app { flex-direction: column !important; }
+
+/* 2. Unhide login steps */
+#loginStep1, #loginStep2, #loginStep3 {
+  display: block !important;
+  margin-bottom: 40px !important;
+}
+
+/* 3. Unhide all dashboard/app pages */
+[id^="page-"] {
+  display: block !important;
+  margin-bottom: 100px !important;
+}
+
+/* 4. Unhide hidden driver trip panels */
+#activeTripPanel, #postTripForm {
+  display: block !important;
+}
+/* --------------------------------------- */
 </style>
 </head>
 <body>
